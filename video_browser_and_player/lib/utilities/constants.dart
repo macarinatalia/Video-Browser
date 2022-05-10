@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: constant_identifier_names
 const API_KEY = '27236302-31d450790e5e22d1a48e68e7f';
 
 const myLabelSmallStyle = TextStyle(

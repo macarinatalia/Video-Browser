@@ -25,7 +25,7 @@ class VideoListTile extends StatelessWidget {
               : const Icon(Icons.person),
           Flexible(
             child: Container(
-              padding: EdgeInsets.all(5.0),
+              padding: const EdgeInsets.all(5.0),
               child: Text(
                 video.user,
                 overflow: TextOverflow.ellipsis,

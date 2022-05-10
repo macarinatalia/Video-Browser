@@ -99,18 +99,16 @@ class _LoginPage extends State<LoginPage> {
   }
 
   Widget _rememberMeCheckBox() {
-    return Container(
-      child: Row(children: [
-        Checkbox(
-            value: _rememberMe,
-            onChanged: (value) {
-              setState(() {
-                _rememberMe = value!;
-              });
-            }),
-        const Text('Remember me', style: myLabelSmallStyle),
-      ]),
-    );
+    return Row(children: [
+      Checkbox(
+          value: _rememberMe,
+          onChanged: (value) {
+            setState(() {
+              _rememberMe = value!;
+            });
+          }),
+      const Text('Remember me', style: myLabelSmallStyle),
+    ]);
   }
 
   Widget _signInBth() {

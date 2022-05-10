@@ -1,0 +1,28 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "video_browser_and_player",
+            "cwd": "video_browser_and_player",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "video_browser_and_player (profile mode)",
+            "cwd": "video_browser_and_player",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "video_browser_and_player (release mode)",
+            "cwd": "video_browser_and_player",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

@@ -59,25 +59,23 @@ class _VideoPageState extends State<VideoPage> {
         ],
         actionsIconTheme: myAppBarIconStyle,
       ),
-      body: Container(
-        child: Column(
-          children: [
-            PodVideoPlayer(controller: _controller),
-            Expanded(
-              child: ListView(
-                shrinkWrap: true,
-                physics: const ScrollPhysics(),
-                children: [
-                  const SizedBox(height: 10),
-                  _userInfoForm(widget.video),
-                  _videoInfoForm(widget.video),
-                  _messageForm(widget.video.comments),
-                  _relatedVideoFrom(),
-                ],
-              ),
+      body: Column(
+        children: [
+          PodVideoPlayer(controller: _controller),
+          Expanded(
+            child: ListView(
+              shrinkWrap: true,
+              physics: const ScrollPhysics(),
+              children: [
+                const SizedBox(height: 10),
+                _userInfoForm(widget.video),
+                _videoInfoForm(widget.video),
+                _messageForm(widget.video.comments),
+                _relatedVideoFrom(),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
@@ -95,7 +93,7 @@ class _VideoPageState extends State<VideoPage> {
               : const Icon(Icons.person),
           Flexible(
             child: Container(
-              padding: EdgeInsets.only(left: 10, right: 5),
+              padding: const EdgeInsets.only(left: 10, right: 5),
               child: Text(
                 video.user,
                 overflow: TextOverflow.ellipsis,
